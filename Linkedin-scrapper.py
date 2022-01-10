@@ -62,7 +62,7 @@ def main():
  
   posts.append(post)
   #CSV file
-  with open('filename.csv', 'w', newline='', encoding="UTF-8") as f:
+  with open('posts_data.csv', 'w', newline='', encoding="UTF-8") as f:
       c = csv.writer(f)
       for key, value in post.items():
           c.writerow([key] + value)
